@@ -11,7 +11,11 @@ Calcule cuánto espacio (en la unidad más adecuada: Byte, KB, MG, GB, TB) consu
 Solución: 
 + Cada caracter del *archivo 1* consume ___1 byte.___
 + Cada dato punto flotante del *archivo 2* consume ___4 bytes.___
-+ Cada dato entero del *archivo 3* consume ___732 bytes.___
++ Cada dato entero del *archivo 3* consume también ___4 byte.___
 
-En total, suman 52383 bytes + (5433 x 4) bytes + (3434 x 732) bytes = ___2.587.803 bytes.___ 
-Eso es equivalente a ___2,467 MG___ aproximadamente
+En total, suman (52383 x 1) bytes + (5433 x 4) bytes + (3434 x 4) bytes = ___87.851 bytes.___ 
+Eso es equivalente a ___85,791 KB___ aproximadamente
+
+<img width="800" height="400" alt="Sistema Binario" src="https://github.com/user-attachments/assets/b565926d-214c-45f1-9f4a-7cddae99c13c" />
+
+_Tomado de:_ https://concepto.de/byte/ 

@@ -55,3 +55,61 @@ Fin
 
 ### Diagrama de flujo.
 ![Diagrama de flujo ejercicio 2 - Algoritmos](Ejercicio2_Algoritmos.drawio.png)
+---
+## Ejercicio 3: 
+Realice un algoritmo para determinar cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90. Represéntelo con el pseudocódigo y el diagrama de flujo.
+
+### Análisis.
+
+|Variables     | Tipo       | Comentario                   |
+|--------------|------------|------------------------------|
+|Lápices       | Entrada    | Cantidad de lápices          |
+| Precio       | Salida     | Precio total de los lápices  |
+| valor_unidad | Intermedia | Valor unitario de cada lápiz |
+|$85, $90        | Constantes | Estas variables son fijas    |
+
+## Pseudocódigo
+```
+Inicio
+Leer Lápices
+Si Lápices >= 1000:
+    valor_unidad = 85
+Si no 
+    valor_unidad = 90
+Fin Si
+Precio = Lápices * valor_unidad
+Escribir "El valor total es:", Precio
+Fin
+```
+### Diagrama de flujo.
+![Diagrama de Flujo Ejercicio 3](<Diagrama de flujo - Ejercicio 3.drawio.png>)
+
+---
+## Ejercicio 4:
+Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se les aplicará un descuento de 15%, de caso contrario, sólo se aplicará un 8% de descuento. Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar en dicho almacén y de cuánto es el descuento que obtendrá. Represéntelo mediante el pseudocódigo y el diagrama de flujo.
+
+### Análisis.
+
+| Variables | Tipo | Comentario |
+|-----------|------|------------|
+|Total_Compra | Entrada | Valor de la compra |
+| Descuento | Salida | Este es el descuento según el valor de la compra
+| Precio_Total | Salida | El valor final a pagar por el cliente, incluyendo el descuento
+| 15%, 8%, $250000 | Constantes | Descuentos y valor límite | 
+
+### Pseudocódigo.
+```
+Inicio
+Leer Total_Compra
+Si Total_Compra > 250000:
+    Descuento = Total_Compra * 0.15
+Si no 
+    Descuento = Total_Compra * 0.08
+Fin Si
+Precio_Total = Total_Compra - Descuento
+Escribir "Valor a pagar:", Precio_Total
+Fin
+```
+
+### Diagrama de fujo.
+(Hacerlo en la casa). 

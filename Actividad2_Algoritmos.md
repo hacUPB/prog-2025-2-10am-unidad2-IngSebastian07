@@ -113,3 +113,38 @@ Fin
 
 ### Diagrama de fujo.
 (Hacerlo en la casa). 
+---
+## Ejercicio 5:
+El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
+
+### Análisis.
+| Variable | Tipo | Comentario |
+|----------|------|------------|
+| Alumnos | Entrada | Se indica cuál es la cantidad de alumnos |
+| Costo_Alumno | Salida | Este es el costo dependiento la cantidad de alumnos |
+| Costo_Total | Salida | Costo total: costo por alumnos más costoautobus | 
+| (Todo expresado en cantidad de alumnos) 100, 50 a 99, 30 a 49 | Constante | Rangos de alumnos para los cuales el costo es variable |
+
+### Pseudocódigo.
+```
+Inicio
+Leer Alumnos 
+Si Alumnos >= 100:
+    Costo_Alumno = 65
+    Costo_Total = Costo_Alumno * Alumno
+Si no:
+    Si Alumnos >= 50:
+        Costo_Alumno = 70
+        Costo_Total = Costo_Alumno * Alumno
+    Si no:
+        Si Alumnos >= 30:
+            Costo Alumno = 95
+            Costo_Total = Costo_Alumno * Alumno
+        Si no:
+            Costo_Total = 4000
+        Fin Si
+    Fin Si
+Fin Si
+Escribir "El costo total del viaje es", Costo_Total
+Fin
+```

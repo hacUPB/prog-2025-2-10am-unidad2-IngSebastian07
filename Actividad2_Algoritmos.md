@@ -138,9 +138,10 @@ Si no:
         Costo_Total = Costo_Alumno * Alumno
     Si no:
         Si Alumnos >= 30:
-            Costo Alumno = 95
+            Costo_Alumno = 95
             Costo_Total = Costo_Alumno * Alumno
         Si no:
+            Costo_Alumno = 4000 / Alumnos
             Costo_Total = 4000
         Fin Si
     Fin Si

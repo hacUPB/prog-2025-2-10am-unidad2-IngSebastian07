@@ -112,7 +112,7 @@ Fin
 ```
 
 ### Diagrama de fujo.
-(Hacerlo en la casa). 
+![alt text](Diagrama_Ejercicio4.drawio.png)
 ---
 ## Ejercicio 5:
 El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
@@ -149,3 +149,31 @@ Fin Si
 Escribir "El costo total del viaje es", Costo_Total
 Fin
 ```
+
+### Diagrama de flujo.
+![Diagrama de Flujo Ejercicio 5](Diagrama_Ejercicio5.drawio.png)
+
+## Ejercicio 6: Tarea.
+Crear un pseudocódigo y un diagrama de flujo para el siguiente proceso:
+Ingresar día, mes y año de nacimiento (son variables de entrada). Ingresar día, mes y año actual, es decir, la fecha actual (son variables de entrada). 
+Calcular edad (variable de salida).
+
+### Pseudocódigo.
+```
+Inicio
+Leer Día_Nacimiento, Mes_Nacimiento, Año_Nacimiento
+Leer Día_Actual, Mes_Actual, Año_Actual
+Edad = Año_Actual - Año_Nacimiento
+Si Mes_Actual < Mes_Nacimiento:
+    Edad = Edad -1
+Si no
+    Si (Mes_Actual = Mes_Nacimiento) y (Dia_Actual < Dia_Nacimiento):
+        Edad = Edad -1 
+    Fin Si
+Fin Si
+Escribir "La edad es: ", Edad, " años"
+Fin
+```
+
+### Diagrama de Flujo.
+![alt text](Diagrama_Ejercicio6_Tarea.drawio-1.png)
